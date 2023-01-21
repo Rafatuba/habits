@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABITS</title>
+    <link rel="shortcut icon" href="/assets/healthy-eating.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <header>
+      <img src="/assets/logo.svg" alt="logomarca do aplicativo habits">
+      <button>
+        <img src="/assets/plus.svg" alt="ícone sinal somar">
+        Registrar o meu dia</button>
+    </header>
+
+    <form id="form-habits">
+      <div class="habits">
+        <div class="habit" data-name="run"><img src="/assets/running.png" alt=""></div> <!-- emojis: win + . --> 
+        <div class="habit" data-name="water"><img src="/assets/drink-water.png" alt=""></div>
+        <div class="habit" data-name="food"><img src="/assets/apple.png" alt=""></div>
+        <div class="habit" data-name="sleep"><img src="/assets/sleep.png" alt=""></div>
+        <div class="habit" data-name="book"><img src="/assets/open-book.png" alt=""></div>
+        <div class="habit" data-name="study"><img src="/assets/study.png" alt=""></div>
+      </div>
+      
+      <div class="days"></div>
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/gh/maykbrito/libs/NLWSetup/source/NLWSetup.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

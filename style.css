@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #09090A;
+  height: 100vh;
+  margin: 48px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  padding: 48px;
+}
+
+button {
+  padding: 16px 24px;
+  border: 1px solid #8B5CF6;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+/* .data {
+  color: #A1A1AA;
+  border-right: 2px solid #8B5CF6;
+  padding-right: 10px;
+  font-family: 'roboto mono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  margin-bottom: 8px;
+} */
+
+#form-habits {
+  display: flex;
+  padding: 0 48px;
+}
+
+.habits {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  position: absolute;
+}
+
+.habit {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habit img {
+  width: 70%;
+  
+}
+
+.days {
+  color: #A1A1AA;
+  font-family: 'roboto mono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+  padding: 0 60px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+input {
+  appearance: none; /* retira a aparência padrão */
+  /* -webkit-appearance: none;  >>fora do padrão>>não usa mais */
+  width: 64px;
+  height: 64px;
+  background: #18181B;
+  border: 2px solid #27272A;
+  border-radius: 8px;
+}
+/*pseudo-selector*/
+input:checked {
+  background: #8B5CF6;
+  border: 2px solid #A78BFA;
+}
+
+
+@media screen and (max-width:767px) {
+  body {
+    margin: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  input {
+    width: 48px;
+    height: 48px;
+  }
+  /* .data{
+    border-right: 2px solid #8B5CF6;
+    padding-right: 8px;
+    font-size: 18px;
+  } */
+  .habits {
+    margin-top: 54px;
+    gap: 36px;
+  }
+  .habit {
+    width: 80%;
+    padding-left: 0;
+  }
+  .days {
+    margin: 0;
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    padding-bottom: 20px;
+  }
+  button {
+    height: 30px;
+  }
+}
